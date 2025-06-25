@@ -1,2 +1,2 @@
 # Dodge-the-Slippers
-First 2D game
+A simple 2D action game built with Godot where you dodge flying slippers and survive as long as possible.
