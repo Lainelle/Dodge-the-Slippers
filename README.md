@@ -6,4 +6,7 @@
 2. Unpack
 3. Start .exe
 
-![output](https://github.com/user-attachments/assets/a6942dff-96f7-45dc-b781-d00fd3308eec)
+![Demo](art/demo.gif)
+
+# License
+This project is open source and available freely under the MIT license.
