@@ -609,13 +609,12 @@ trail_scene = ExtResource("2_66i60")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(28, 0)
 scale = Vector2(0.08, 0.08)
 sprite_frames = SubResource("SpriteFrames_hqtel")
 animation = &"walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 0)
+position = Vector2(-27, 0)
 shape = SubResource("RectangleShape2D_xry5e")
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]

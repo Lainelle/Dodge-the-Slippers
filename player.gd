@@ -64,6 +64,5 @@ func start(pos):
 
 func spawn_trail():
 	var trail := trail_scene.instantiate()
-	trail.position = position
-	trail.scale = $".".scale
-	get_parent().add_child(trail)
+	trail.scale = $AnimatedSprite2D.scale
+	add_child(trail)

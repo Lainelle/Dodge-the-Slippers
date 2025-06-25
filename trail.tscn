@@ -4,10 +4,9 @@
 [ext_resource type="Script" uid="uid://cm15m3x3d7goi" path="res://trail.gd" id="1_xjhlx"]
 
 [node name="Trail" type="Node2D"]
+modulate = Color(1, 1, 1, 0.470588)
 script = ExtResource("1_xjhlx")
-shrink_rate = 0.5
+shrink_rate = 0.1
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(247, 279)
-scale = Vector2(0.242537, 0.242537)
 texture = ExtResource("1_apcad")
