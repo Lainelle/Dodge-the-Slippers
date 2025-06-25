@@ -617,10 +617,6 @@ animation = &"walk"
 position = Vector2(-27, 0)
 shape = SubResource("RectangleShape2D_xry5e")
 
-[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
-
 [node name="Explosion" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("33_hiqhm")
 volume_db = 24.0
