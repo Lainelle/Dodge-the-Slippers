@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://tenq632868lr"]
 
-[ext_resource type="Script" uid="uid://dx24ubnvmg7rb" path="res://mob.gd" id="1_1qmh0"]
+[ext_resource type="Script" uid="uid://dx24ubnvmg7rb" path="res://scripts/mob.gd" id="1_1qmh0"]
 [ext_resource type="Texture2D" uid="uid://bu5hfsdn54uf" path="res://art/Slipper/output_nobg.png" id="2_nokgg"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yscv0"]
