@@ -6,6 +6,8 @@ signal hit()
 @export var speed = 400 #how fast the player will move (pixels/sec).
 @export var explode_scene: PackedScene
 @export var trail_scene: PackedScene 
+@export var trail_interval := 0.1      # seconds between trail spawns
+var time_since_trail := 0.0
 var screen_size #size of the game window.
 var player_size
 
@@ -18,6 +20,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	time_since_trail += delta
 	var velocity = Vector2.ZERO
 	if Input.is_action_pressed("move_right"):
 		velocity.x += 1
@@ -41,7 +44,9 @@ func _process(delta):
 	if velocity.x != 0 or velocity.y != 0:
 		$AnimatedSprite2D.animation = "walk"
 		$AnimatedSprite2D.flip_v = false
-		spawn_trail()
+		if time_since_trail >= trail_interval:
+			spawn_trail()
+			time_since_trail = 0.0
 
 
 func _on_body_entered(body):
@@ -63,7 +68,8 @@ func start(pos):
 	$CollisionShape2D.disabled = false
 
 func spawn_trail():
-	var trail := trail_scene.instantiate()
+	var trail = trail_scene.instantiate()
 	trail.scale = $AnimatedSprite2D.scale
-	add_child(trail)
+	get_parent().add_child(trail)
 	trail.global_position = $AnimatedSprite2D.global_position
+	trail.z_index = z_index - 1
