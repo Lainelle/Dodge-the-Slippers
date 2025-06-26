@@ -182,7 +182,7 @@
 [ext_resource type="Texture2D" uid="uid://bmfw2iwxq5hx2" path="res://art/Cat2/frame_0178.png" id="180_0fyj2"]
 [ext_resource type="Texture2D" uid="uid://bkftq3jtpgcso" path="res://art/Cat2/frame_0179.png" id="181_8t2vh"]
 [ext_resource type="Texture2D" uid="uid://06gvtfr2kuvn" path="res://art/Cat2/frame_0180.png" id="182_60s0x"]
-[ext_resource type="Script" uid="uid://cubb726lv17cp" path="res://game_over_cat.gd" id="183_dujjk"]
+[ext_resource type="Script" uid="uid://cubb726lv17cp" path="res://scripts/game_over_cat.gd" id="183_dujjk"]
 [ext_resource type="AudioStream" uid="uid://cgimyy8op4kjf" path="res://Music/crying kitten.mp3" id="183_ekx2m"]
 
 [sub_resource type="InputEventAction" id="InputEventAction_64ctp"]

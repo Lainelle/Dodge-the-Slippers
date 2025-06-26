@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://p78e2bvmgtew"]
+
+[ext_resource type="Script" uid="uid://b3vki6wmr1tgg" path="res://joystick.gd" id="1_413m4"]
+[ext_resource type="Script" uid="uid://bc4f46nkinur0" path="res://bg.gd" id="2_jhikm"]
+[ext_resource type="Script" uid="uid://d1lfqk0fxg2f3" path="res://knob.gd" id="3_e821k"]
+
+[node name="joystick" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_413m4")
+
+[node name="Bg" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_jhikm")
+
+[node name="Knob" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_e821k")
